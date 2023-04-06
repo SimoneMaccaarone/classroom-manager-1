@@ -13,16 +13,35 @@ const student4 = new Student('Francesco', 'Badile');
 const classroom1 = new ClassRoom([student1, student2, student3, student4]);
 
 
-function displayClassroom(classroom){
+function displayClassroom(array) {
+    document.getElementById('student-list').innerHTML = '';
+
+
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+        console.log(element);
+
+        const studentList = document.createElement('student-list');
+        const newLi = document.createTextNode(li);
+        const studentLi = document.createTextNode(element);
+        const removeButton = document.createElement('button');
+        const buttonText = document.createTextNode('remove');
+
+        removeButton.appendChild(buttonText);
+        removeButton.addEventListener('click', (event) => removeStudent(element));
+
+        newLi.appendChild(studentLi);
+        newLi.appendChild(removeButton);
+        studentList.appendChild(newLi);
+    }
+
+    function shuffleTheClassroom() {
+
+    }
+
+    function addStudentToClassroom() {
+
+    }
 
 }
-
-function shuffleTheClassroom(){
-
-}
-
-function addStudentToClassroom(){
-
-}
-
 
