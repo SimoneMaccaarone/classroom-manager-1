@@ -1,22 +1,24 @@
-class ClassRoom{
+class ClassRoom {
 
-    constructor(students = []){
+    constructor(students = []) {
         this.students = students;
     }
 
-    addStudent(student){
-
+    addStudent(student) {
+        this.students.push(student);
     }
 
-    removeStudent(student){
 
-
+    removeStudent(student) {
+        const studentIndex = this.students.indexOf(student);
+        this.students.splice(studentIndex, 1);
+        displayClassroom(classroom1);
     }
 
-    shuffleStudents(){
+    shuffleStudents() {
 
+        let shuffleStudents = this.students.sort(function () { return 0.5 - Math.random() });
 
-        
     }
 
 }

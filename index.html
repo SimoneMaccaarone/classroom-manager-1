@@ -1,29 +1,45 @@
     <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClassRoom Manager</title>
+    <title>Class Room Manager</title>
 </head>
+
+<!-- ---------------------------------------------------------------------------------- -->
+
 <body>
     <h1>Classroom Manager</h1>
     <ul id="student-list">
     </ul>
+
+
     <button onclick="shuffleTheClassroom()">Rimescola la classe</button>
+
+    <!-- ---------------------------------------------------------------------------------- -->
+
     <div>
         <h3>Inserimento Studente</h3>
+
         <div>
             <span>nome</span>
-            <input type="text">
+            <input type="text" id="student-name">
         </div>
+
         <div>
             <span>cognome</span>
-            <input type="text">
+            <input type="text" id="student-surname">
         </div>
-        <button onclick="addStudentToClassroom()">Inserisci studente</button>
+        <button class="remove-button" onclick="addStudentToClassroom()">Inserisci studente</button>
     </div>
+
+<!-- ---------------------------------------------------------------------------------- -->
+
+
+
 </body>
+<link rel="stylesheet" href="style.css">
 <script src="./student.js"></script>
 <script src="./classroom.js"></script>
 <script src="./main.js"></script>
