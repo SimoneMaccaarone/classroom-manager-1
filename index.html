@@ -1,5 +1,6 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,34 +11,48 @@
 <!-- ---------------------------------------------------------------------------------- -->
 
 <body>
-    <h1>Classroom Manager</h1>
-    <ul id="student-list">
-    </ul>
+    <header>
+        <h1>Classroom Manager</h1>
 
-
-    <button onclick="shuffleTheClassroom()">Rimescola la classe</button>
-
-    <!-- ---------------------------------------------------------------------------------- -->
-
-    <div>
-        <h3>Inserimento Studente</h3>
-
-        <div>
-            <span>nome</span>
-            <input type="text" id="student-name">
-        </div>
-
-        <div>
-            <span>cognome</span>
-            <input type="text" id="student-surname">
-        </div>
-        <button class="remove-button" onclick="addStudentToClassroom()">Inserisci studente</button>
-    </div>
+    </header>
 
 <!-- ---------------------------------------------------------------------------------- -->
+<main>
 
+    
+    
+    
+    <ul id="student-list"></ul> 
+        <!-- <button class="image-button" onclick="shuffleTheClassroom()"> -->
+            <img class="pippo"  onclick="shuffleTheClassroom() "src="./assets/randomLogo.jpg" alt="">
+        <!-- </button> -->
 
+        
+    <!-- <img src="./assets/add.png" alt=""> -->
+    
 
+</main>
+ <!-- ---------------------------------------------------------------------------------- -->
+
+    <footer>
+
+        <div>
+            <h3>Inserimento Studente</h3>
+
+            <div>
+                <span>Nome</span>
+                <input type="text" id="student-name">
+            </div>
+
+            <div>
+                <span>Cognome</span>
+                <input type="text" id="student-surname">
+            </div>
+            <button class="add-button" onclick="addStudentToClassroom()"> Inserisci studente</button>
+        </div>
+
+    </footer>
+    <!-- ---------------------------------------------------------------------------------- -->
 </body>
 <link rel="stylesheet" href="style.css">
 <script src="./student.js"></script>

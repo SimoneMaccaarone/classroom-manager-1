@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:wght@400;700&family=Patua+One&display=swap');
 
-
-h1{
+body{
+    font-family: 'Patua One', cursive;
+    font-size: xx-large;    
+}
+header{
     text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    /* font-family: 'Patua One', cursive; */
+    /* font-family: 'PT Sans', sans-serif; */
+    
 }
 
 ul {
@@ -11,5 +19,15 @@ ul {
 
 
 
+.image-button{
+width: 30px;
+height: 30px;
+}
 
-
+.pippo{
+    border: solid green;
+    display: flex;
+    align-self: center;
+    width: 100px;
+    height: 100px;
+}

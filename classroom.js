@@ -16,9 +16,7 @@ class ClassRoom {
     }
 
     shuffleStudents() {
-
         let shuffleStudents = this.students.sort(function () { return 0.5 - Math.random() });
 
     }
-
-}
+} 
