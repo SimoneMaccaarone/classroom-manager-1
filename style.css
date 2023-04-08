@@ -1,32 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:wght@400;700&family=Patua+One&display=swap');
 
-body{
+body {
+    display: flex;
     font-family: 'Patua One', cursive;
-    font-size: xx-large;    
+    font-size: xx-large;
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    /* justify-content: center; */
 }
-header{
-    text-align: center;
+
+.tutto {
+    border: solid 5px yellow;
+    width: 100vw;
+
+}
+
+
+/* --- CLASSROOM MANAGER --- */
+header {
+    border: solid 3px blue;
     font-family: 'Bebas Neue', cursive;
     /* font-family: 'Patua One', cursive; */
     /* font-family: 'PT Sans', sans-serif; */
-    
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+
+.container-center{
+    border: solid 2px purple ;
+    display: flex;
+    flex-grow: 2;
+}
+
+main {
+    border: solid 3px green;
+    display: flex;
+    flex-grow: 3;
 }
 
 ul {
-
     columns: 2;
 }
 
 
+.right-nav {
+    border: solid 3px red;
+    flex-grow: 1;
 
-.image-button{
-width: 30px;
-height: 30px;
+
 }
 
-.pippo{
-    border: solid green;
+.inserimento-utente {
+    border: solid 2px black;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+
+
+}
+
+
+.image-button {
+    width: 30px;
+    height: 30px;
+}
+
+.pippo {
     display: flex;
+    border: solid green;
     align-self: center;
     width: 100px;
     height: 100px;

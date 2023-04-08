@@ -8,51 +8,48 @@
     <title>Class Room Manager</title>
 </head>
 
-<!-- ---------------------------------------------------------------------------------- -->
+<!-- -------------------------------- HEADER ----------------------------- -->
 
 <body>
-    <header>
-        <h1>Classroom Manager</h1>
+    <div class="tutto">
+        <header>
+            <h1> Classroom Manager </h1>
+        </header>
+        <!-- ------------------------------- MAIN --------------------------------->
+        <div class="container-center">
+        <main>
+                <ul id="student-list"></ul>
+                <!-- <button class="image-button" onclick="shuffleTheClassroom()"> -->
+                <img class="pippo" onclick="shuffleTheClassroom() " src="./assets/randomLogo.jpg" alt="">
+                <!-- </button> -->
 
-    </header>
 
-<!-- ---------------------------------------------------------------------------------- -->
-<main>
+                <!-- <img src="./assets/add.png" alt=""> -->
 
-    
-    
-    
-    <ul id="student-list"></ul> 
-        <!-- <button class="image-button" onclick="shuffleTheClassroom()"> -->
-            <img class="pippo"  onclick="shuffleTheClassroom() "src="./assets/randomLogo.jpg" alt="">
-        <!-- </button> -->
 
-        
-    <!-- <img src="./assets/add.png" alt=""> -->
-    
+        </main>
 
-</main>
- <!-- ---------------------------------------------------------------------------------- -->
+        <!-- --------------------------- FOOTER ---------------------------------->
 
-    <footer>
+        <footer class="right-nav">
+            <div class="inserimento-utente">
+                <h3>Inserimento Studente</h3>
 
-        <div>
-            <h3>Inserimento Studente</h3>
+                <div>
+                    <span>Nome</span>
+                    <input type="text" id="student-name">
+                </div>
 
-            <div>
-                <span>Nome</span>
-                <input type="text" id="student-name">
+                <div>
+                    <span>Cognome</span>
+                    <input type="text" id="student-surname">
+                </div>
+                <button class="add-button" onclick="addStudentToClassroom()"> Inserisci studente</button>
             </div>
-
-            <div>
-                <span>Cognome</span>
-                <input type="text" id="student-surname">
-            </div>
-            <button class="add-button" onclick="addStudentToClassroom()"> Inserisci studente</button>
-        </div>
-
-    </footer>
-    <!-- ---------------------------------------------------------------------------------- -->
+        </footer>
+    </div>
+    </div>
+    <!-- ---------------------------------------------------------------->
 </body>
 <link rel="stylesheet" href="style.css">
 <script src="./student.js"></script>
