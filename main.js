@@ -18,7 +18,7 @@ const student10 = new Student('Davide', 'Cresta');
 
 
 
-const classroom1 = new ClassRoom([student1, student2, student3, student4,student5,student6,student7,student8,student9,student10]);
+const classroom1 = new ClassRoom([student1, student2, student3, student4, student5, student6, student7, student8, student9, student10]);
 
 
 //▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
@@ -31,37 +31,37 @@ function displayClassroom(array) {
     const classRoomStudent = array.students
 
     for (let i = 0; i < classRoomStudent.length; i++) {
-        const element = classRoomStudent[i];        // element = student   | element equivale a student RICORDATELOOOOO!!!!!
+        const element = classRoomStudent[i];               // element = student   | element equivale a student RICORDATELOOOOO!!!!!
         console.log(element);
 
         // creazione della lista degli studenti
+
         const studentList = document.getElementById('student-list'); // scegliere dove fare la lista
-        const newLi = document.createElement('li'); // scegliere il tag che voglio usare
-        const studentLi = document.createTextNode((element.name) + ' ' + (element.surname));   // scrivere cosa voglio mettere ( il testo)
+        // const newLi = document.createElement('li'); // scegliere il tag che voglio usare
+        // const studentLi = document.createTextNode((element.name) + ' ' + (element.surname));   // scrivere cosa voglio mettere ( il testo)
+
+
+        // effetto collaterale : non funzionano le classi, immagine. FORSE LA FUNZIONE NON RIMUOVI NON FUNZIONE PER QUESTO        //----- metodo alternativo per aggiungere un tag HTML-------
+        studentList.innerHTML += `<li class "list-element">${element.name} ${element.surname} <button class "bottone-rimuovi" onclick="removeStudents()" >cancella</button></li>`;
 
 
 
-        //----- metodo alternativo per aggiungere un tag HTML-------
-        //studentList-innerHTML += `<li class "list-element">${element.name} ${element.surname}<button> cancella</button>`
 
-
-
-        
-        // aggiunta del pulsante rimuove
-        const removeButton = document.createElement('button');
+        // // aggiunta del pulsante rimuove
+        // const removeButton = document.createElement('button');
         // const buttonText = document.createTextNode('BIDONAAAAAA');
-        removeButton.classList.add('remove-btn')
-        const removeImg = document.createElement('img')
-        removeImg.classList.add('remove-img')
-        removeImg.src = './assets/cestinooo.jpg'
+        // removeButton.classList.add('remove-btn')
+        // const removeImg = document.createElement('img')
+        // removeImg.classList.add('remove-img')
+        // removeImg.src = './assets/cestinooo.jpg'
 
-        removeButton.appendChild(removeImg);
-        
-        removeButton.addEventListener('click', (event) => classroom1.removeStudent(element));
+        // removeButton.appendChild(removeImg);
 
-        newLi.appendChild(studentLi);
-        newLi.appendChild(removeButton);
-        studentList.appendChild(newLi);
+        // removeButton.addEventListener('click', (event) => classroom1.removeStudent(element));
+
+        // newLi.appendChild(studentLi);
+        // newLi.appendChild(removeButton);
+        // studentList.appendChild(newLi);
     }
 }
 

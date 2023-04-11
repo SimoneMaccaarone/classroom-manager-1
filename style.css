@@ -5,13 +5,14 @@ body {
     font-family: 'Patua One', cursive;
     font-size: xx-large;
     padding: 10%;
-    /* justify-content: center; */
+    justify-content: center;
 }
 
 .tutto {
+    /* display:flex ; */
     border: solid 5px yellow;
     width: 100vw;
-
+    justify-content: center;
 }
 
 
@@ -27,8 +28,8 @@ header {
 }
 
 
-.container-center{
-    border: solid 2px purple ;
+.container-center {
+    border: solid 2px purple;
     display: flex;
     flex-grow: 2;
 }
@@ -37,58 +38,41 @@ main {
     border: solid 3px green;
     display: flex;
     flex-grow: 3;
-    padding: 5%;
+    padding: 40px;
+    justify-content: space-between;
 }
 
-/* .stocazzo {
-    grid-area: myArea;
-} */
+/* --------    LISTA   --------- */
 ul {
-    
+
     border: solid 1px yellow;
-    columns: 2;
-    margin: 5%;
+    columns: 4;
     /* display: grid;
     grid-template-areas: 
-    'myArea myArea myArea myArea' */
-    
-    ;
-
+    'myArea myArea myArea myArea'; */
 }
 
-
-.right-nav {
-    display: flex;
-    border: solid 3px red;
-    flex-grow: 1;
-    justify-content: center;
-    
+/* CESTINO IMMAGINE */
 
 
-}
-
-.inserimento-utente {
-    border: solid 2px black;
-    /* display: flex;
-    flex-direction: column;*/
-    justify-content: center; 
-    padding: 5%;
-    
-
-}
-.remove-img{
-    width: 100%;
-}
-.remove-btn{
+.bottone-rimuovi{
     width: 30px;
     height: 30px;
     padding: 0px;
     border: none;
     background-color: transparent;
+    
+}
+
+.img-remove{
+    width: 100%;
 }
 
 
 
+
+/* -_-_-   SHUFFLE -_-_- */
+/* SHUFFLE IMMAGINE */
 
 .image-button {
     width: 30px;
@@ -99,9 +83,32 @@ ul {
 
 .pippo {
     display: flex;
-    border: solid green;
+    border: solid rgb(92, 111, 92);
     align-self: center;
     width: 100px;
     height: 100px;
+}
+
+
+
+
+
+
+/* ----------  FOOTER    ------------ */
+.right-nav {
+    display: flex;
+    border: solid 3px red;
+    flex-grow: 1;
+    justify-content: center;
+
+}
+
+.inserimento-utente {
+    border: solid 2px black;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 
 }
