@@ -4,10 +4,7 @@ body {
     display: flex;
     font-family: 'Patua One', cursive;
     font-size: xx-large;
-    padding-left: 10%;
-    padding-top: 10%;
-    padding-right: 10%;
-    padding-bottom: 10%;
+    padding: 10%;
     /* justify-content: center; */
 }
 
@@ -40,16 +37,32 @@ main {
     border: solid 3px green;
     display: flex;
     flex-grow: 3;
+    padding: 5%;
 }
 
+/* .stocazzo {
+    grid-area: myArea;
+} */
 ul {
+    
+    border: solid 1px yellow;
     columns: 2;
+    margin: 5%;
+    /* display: grid;
+    grid-template-areas: 
+    'myArea myArea myArea myArea' */
+    
+    ;
+
 }
 
 
 .right-nav {
+    display: flex;
     border: solid 3px red;
     flex-grow: 1;
+    justify-content: center;
+    
 
 
 }
@@ -57,11 +70,24 @@ ul {
 .inserimento-utente {
     border: solid 2px black;
     /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-
+    flex-direction: column;*/
+    justify-content: center; 
+    padding: 5%;
+    
 
 }
+.remove-img{
+    width: 100%;
+}
+.remove-btn{
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+}
+
+
 
 
 .image-button {
@@ -69,10 +95,13 @@ ul {
     height: 30px;
 }
 
+
+
 .pippo {
     display: flex;
     border: solid green;
     align-self: center;
     width: 100px;
     height: 100px;
+
 }
