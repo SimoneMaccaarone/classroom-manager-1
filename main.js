@@ -39,9 +39,14 @@ function displayClassroom(array) {
         const newLi = document.createElement('li'); // scegliere il tag che voglio usare
         const studentLi = document.createTextNode((element.name) + ' ' + (element.surname));   // scrivere cosa voglio mettere ( il testo)
 
+
+
         //----- metodo alternativo per aggiungere un tag HTML-------
         //studentList-innerHTML += `<li class "list-element">${element.name} ${element.surname}<button> cancella</button>`
 
+
+
+        
         // aggiunta del pulsante rimuove
         const removeButton = document.createElement('button');
         // const buttonText = document.createTextNode('BIDONAAAAAA');
