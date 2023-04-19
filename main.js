@@ -37,31 +37,31 @@ function displayClassroom(array) {
         // creazione della lista degli studenti
 
         const studentList = document.getElementById('student-list'); // scegliere dove fare la lista
-        // const newLi = document.createElement('li'); // scegliere il tag che voglio usare
-        // const studentLi = document.createTextNode((element.name) + ' ' + (element.surname));   // scrivere cosa voglio mettere ( il testo)
+        const newLi = document.createElement('li'); // scegliere il tag che voglio usare
+        const studentLi = document.createTextNode((element.name) + ' ' + (element.surname));   // scrivere cosa voglio mettere ( il testo)
 
 
-        // effetto collaterale : non funzionano le classi, immagine. FORSE LA FUNZIONE NON RIMUOVI NON FUNZIONE PER QUESTO        //----- metodo alternativo per aggiungere un tag HTML-------
-        studentList.innerHTML += `<li class "list-element">${element.name} ${element.surname} <button class "bottone-rimuovi" onclick="removeStudents()" >cancella</button></li>`;
+        // // effetto collaterale : non funzionano le classi, immagine. FORSE LA FUNZIONE NON RIMUOVI NON FUNZIONE PER QUESTO        //----- metodo alternativo per aggiungere un tag HTML-------
+        // studentList.innerHTML += `<li class "list-element">${element.name} ${element.surname} <button class "bottone-rimuovi" onclick="removeStudents()" >cancella</button></li>`;
 
 
 
 
-        // // aggiunta del pulsante rimuove
-        // const removeButton = document.createElement('button');
-        // const buttonText = document.createTextNode('BIDONAAAAAA');
-        // removeButton.classList.add('remove-btn')
-        // const removeImg = document.createElement('img')
-        // removeImg.classList.add('remove-img')
+        // aggiunta del pulsante rimuove
+        const removeButton = document.createElement('button');
+        const buttonText = document.createTextNode('BIDONAAAAAA');
+        removeButton.classList.add('remove-btn')
+        const removeImg = document.createElement('img')
+        removeImg.classList.add('remove-img')
         // removeImg.src = './assets/cestinooo.jpg'
 
-        // removeButton.appendChild(removeImg);
+        removeButton.appendChild(removeImg);
 
-        // removeButton.addEventListener('click', (event) => classroom1.removeStudent(element));
+        removeButton.addEventListener('click', (event) => classroom1.removeStudent(element));
 
-        // newLi.appendChild(studentLi);
-        // newLi.appendChild(removeButton);
-        // studentList.appendChild(newLi);
+        newLi.appendChild(studentLi);
+        newLi.appendChild(removeButton);
+        studentList.appendChild(newLi);
     }
 }
 
